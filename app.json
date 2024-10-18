@@ -3,7 +3,6 @@
     "name": "imoblr",
     "slug": "imoblr",
     "version": "1.0.0",
-
     "scheme": "imoblr",
     "web": {
       "bundler": "metro",
@@ -21,28 +20,33 @@
     ],
     "experiments": {
       "typedRoutes": true,
-
       "tsconfigPaths": true
     },
-
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-
     "userInterfaceStyle": "light",
-
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "br.com.imoblr"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "br.com.imoblr"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d781a2a1-637b-45cf-bf59-c9e0eee4c17e"
       }
     }
   }
