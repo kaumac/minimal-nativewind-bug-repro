@@ -1,7 +1,12 @@
+import { AppThemesProvider } from '~/theme';
 import '../global.css';
 
-import { Stack } from 'expo-router';
+import { Slot } from 'expo-router';
 
 export default function Layout() {
-  return <Stack />;
+  return (
+    <AppThemesProvider name="brand">
+      <Slot />
+    </AppThemesProvider>
+  );
 }
