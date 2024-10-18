@@ -8,7 +8,7 @@ import { ScreenContent } from '~/components/ScreenContent';
 export default function Home() {
   return (
     <View className="bg-[#FFF] flex-1">
-      <Stack.Screen options={{ title: 'Home' }} />
+      <Stack.Screen options={{ title: 'Home', headerShown: false }} />
       <Container>
         <ScreenContent path="app/index.tsx" title="Home" />
         <Link href={{ pathname: '/details', params: { name: 'Dan' } }} asChild>
